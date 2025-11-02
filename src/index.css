@@ -1,0 +1,31 @@
+.bg-diagonal-lines {
+  background-image: url('/src/assets/images/diagonal-lines.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+@font-face {
+  font-family: 'TiltNeon';
+  src: url('./assets/fonts/TiltNeon.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clarkson';
+  src: url('./assets/fonts/Clarkson.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Urbanist';
+  src: url('./assets/fonts/Urbanist-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
