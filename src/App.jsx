@@ -22,7 +22,7 @@ function Example() {
   return (
     <div>
       <Code className="text-indigo-500 w-10 h-10" />
-      <LayoutDashboard className="text-pink-500 w-10 h-10" />
+      <ayoutDashboard className="text-pink-500 w-10 h-10" />
       <Cpu className="text-pink-500 w-10 h-10" />
       <Sparkles className="text-yellow-500 w-10 h-10" />
     </div>
