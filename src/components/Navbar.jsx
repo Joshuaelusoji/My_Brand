@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import BrandLogo from '../assets/images/BrandLogo.svg';
-import { BsFillTelephoneFill } from '../icons';
+import BrandLogo from '/images/BrandLogo.svg';
+import { BsFillTelephoneFill } from '../config/icons';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

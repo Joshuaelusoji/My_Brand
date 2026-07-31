@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import myPhoto from '../assets/images/Josh.jpeg';
-import Elusive from '../assets/images/Elusive.jpeg';
+import Josh from '/images/Josh.jpeg';
+import Elusive from '/images/Elusive.jpeg';
 
 const messages = [
   "I love building innovative digital experiences.",

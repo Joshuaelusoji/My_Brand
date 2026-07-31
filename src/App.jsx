@@ -1,21 +1,20 @@
 import { useState, useEffect } from 'react';
 import SEO from './components/SEO';
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import BrandLogo from './assets/images/BrandLogo.svg';
-import TheCity from "./assets/images/TheCity.png";
-import Elusive from "./assets/images/Elusive.jpeg";
-import Smith from "./assets/images/Smith.jpeg";
-import Timmy from "./assets/images/Timmy.jpeg";
-import David from "./assets/images/David.jpeg";
-import Debby from "./assets/images/Debby.jpg";
-import goldenGroove from "./assets/images/goldenGroove.png";
-import MyPortfolio from "./assets/images/MyPortfolio.png";
-import myPhoto from "./assets/images/Josh.jpeg"; 
+import BrandLogo from '/images/BrandLogo.svg';
+import TheCity from "/images/TheCity.png";
+import Elusive from "/images/Elusive.jpeg";
+import Smith from "/images/Smith.jpeg";
+import Timmy from "/images/Timmy.jpeg";
+import David from "/images/David.jpeg";
+import Debby from "/images/Debby.jpg";
+import GoldenGroove from "/images/GoldenGroove.png";
+import MyPortfolio from "/images/MyPortfolio.png";
+import Josh from "/images/Josh.jpeg"; 
 
 
 import { Code, LayoutDashboard, Cpu, Sparkles } from "lucide-react";
-import { FaWhatsapp, BsFillTelephoneFill, CiMail } from "./icons";
+import { FaWhatsapp, BsFillTelephoneFill, CiMail } from "./config/icons";
 
 
 function Example() {
@@ -241,7 +240,7 @@ const AboutChat = () => {
         <div className="w-24 h-6 bg-black rounded-t-3xl rounded-b-3xl mt-3 mb-0"></div>
 
         <div className="h-10 w-10 rounded-full overflow-hidden border-2 shadow-md mb-1">
-          <img src={myPhoto} alt="Profile" className="w-full h-full object-cover" />
+          <img src={Josh} alt="Profile" className="w-full h-full object-cover" />
         </div>
 
         <div className="flex flex-col space-y-0 w-full h-full overflow-hidden p-2 bg-white  rounded-b-[1.9rem] shadow-inner">
@@ -424,7 +423,7 @@ function Portfolio() {
           </div>
         </div>
         <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden">
-          <img src={goldenGroove} alt="goldenGroove_png" className="w-full h-48 object-cover" />
+          <img src={GoldenGroove} alt="goldenGroove_png" className="w-full h-48 object-cover" />
           <div className="p-4">
            <h3 className="text-xl font-semibold mb-1">Music Landing Page for an Artist</h3>
            <p>A sleek, high-end web experience, showcasing the artist’s unique sound and style.</p>
