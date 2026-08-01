@@ -14,7 +14,7 @@ export default function Navbar() {
               d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
           </svg>
         </button>
-        <ul className="hidden sm:flex items-center space-x-6 font-urbanist font-light ml-auto">
+        {/* <ul className="hidden sm:flex items-center space-x-6 font-urbanist font-light ml-auto">
           <li><a href="#home" className=" text-white">Home</a></li>
           <li><a href="#about" className=" text-white">About</a></li>
           <li><a href="#services" className=" text-white">Services</a></li>
@@ -25,7 +25,7 @@ export default function Navbar() {
               <BsFillTelephoneFill className="w-4 h-4 text-gray-400 scale-x-[-1] group-hover:text-cyan-400" />
             </div>
           </li>
-        </ul>
+        </ul> */}
       </div>
       {isOpen && (
         <ul className="sm:hidden flex flex-col px-8 py-4 space-y-2 bg-gray-950 text-white">
