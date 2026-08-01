@@ -15,7 +15,7 @@ export default function Navbar() {
           </svg>
         </button>
         <ul className="hidden sm:flex items-center space-x-6 font-urbanist font-light ml-auto">
-          {/* <li><a href="#home" className=" text-white">Home</a></li>
+          <li><a href="#home" className=" text-white">Home</a></li>
           <li><a href="#about" className=" text-white">About</a></li>
           <li><a href="#services" className=" text-white">Services</a></li>
           <li><a href="#portfolio" className=" text-white">Projects</a></li>
@@ -24,7 +24,7 @@ export default function Navbar() {
               <a href="#contact" className="text-white font-bold animate-pulse group-hover:text-cyan-500">Connect</a>
               <BsFillTelephoneFill className="w-4 h-4 text-gray-400 scale-x-[-1] group-hover:text-cyan-400" />
             </div>
-          </li> */}
+          </li>
         </ul>
       </div>
       {isOpen && (
