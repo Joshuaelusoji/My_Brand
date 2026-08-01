@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="relative bg-gray-900 bg-diagonal-lines">
+    <div className="relative">
       <SEO />
       <Navbar />
       <About />
