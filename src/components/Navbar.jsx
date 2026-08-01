@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import BrandLogo from '/images/BrandLogo.svg';
 import { BsFillTelephoneFill } from '../config/icons';
 
 export default function Navbar() {
@@ -8,10 +7,7 @@ export default function Navbar() {
   return (
     <nav className="w-full z-50 shadow-md bg-gray-950 bg-opacity-70 backdrop-blur-md">
       <div className="flex justify-between items-center px-8 py-4 md:fixed md:w-full text-white">
-        <div className="flex items-center text-lg sm:text-xl md:text-2xl font-bold">
-          <img src={BrandLogo} alt="Brand Logo" className="h-6 w-6 mr-2" />
-          Joshua<span className="">Elusoji</span>
-        </div>
+       
         <button className="sm:hidden flex items-center focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
