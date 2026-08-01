@@ -1,5 +1,5 @@
 import TheCity from '../assets/images/TheCity.png';
-import goldenGroove from '../assets/images/goldenGroove.png';
+import goldenGroove from '../assets/images/GoldenGroove.png';
 import MyPortfolio from '../assets/images/MyPortfolio.png';
 
 export default function Portfolio() {

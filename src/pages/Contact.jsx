@@ -1,4 +1,4 @@
-import { FaWhatsapp, BsFillTelephoneFill, CiMail } from '../icons';
+import { FaWhatsapp, BsFillTelephoneFill, CiMail } from '../config/icons';
 
 export default function Contact() {
   return (
