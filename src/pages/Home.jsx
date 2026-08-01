@@ -5,7 +5,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center h-screen px-8 text-center bg-diagonal-lines bg-gray-900 text-white"
       >
         <h1 className="font-TiltNeon font-semibold text-6xl mb-4 pb-5 tracking-wide">
-          I design and develop <span className="text-yellow-500">Websites.</span>
+          I design andccc develop <span className="text-yellow-500">Websites.</span>
         </h1>
         <p className="text-lg pb-4 md:text-xl max-w-3xl mb-6">
           A Front-End Developer & Web Designer, crafting{" "}
