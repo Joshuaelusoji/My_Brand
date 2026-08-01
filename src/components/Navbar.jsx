@@ -5,9 +5,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full z-50 shadow-md bg-gray-950 bg-opacity-70 backdrop-blur-md">
-      <div className="flex justify-between items-center px-8 py-4 md:fixed md:w-full text-white">
-       
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-gray-950/70 backdrop-blur-md rounded-full shadow-lg">
+      <div className="flex justify-between items-center px-6 py-3 text-white">
         <button className="sm:hidden flex items-center focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -25,8 +24,7 @@ export default function Navbar() {
               <BsFillTelephoneFill className="w-4 h-4 text-gray-400 scale-x-[-1] group-hover:text-cyan-400" />
             </div>
           </li>
-        </ul> */}
-      </div>
+        </ul> */}</div>
       {isOpen && (
         <ul className="sm:hidden flex flex-col px-8 py-4 space-y-2 bg-gray-950 text-white">
           {["home","about","services","portfolio"].map(link => (
