@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'diagonal-lines': "url('/src/assets/images/diagonal-lines.svg')",
-      },
       fontFamily: {
         clarkson: ['Clarkson', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],

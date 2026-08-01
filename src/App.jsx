@@ -1,5 +1,5 @@
 import SEO from "./components/SEO";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
@@ -11,9 +11,8 @@ function App() {
   return (
     <div className="relative">
       <SEO />
-      <Navbar />
+      {/* <Navbar /> */}
       <About />
-      {/* <Hobbies /> */}
       <Services />
       <Portfolio />
       <Testimonials />
