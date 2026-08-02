@@ -1,19 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsFillTelephoneFill } from "../config/icons";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Prevent scrolling when the mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "visible" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
+  const links = [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Projects", href: "#projects" },
+  ];
+
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-      <div className="relative">
-        <div className="flex items-center justify-between px-6 py-3 bg-gray-950/70 backdrop-blur-md rounded-full shadow-lg text-white">
+    <>
+      {/* Navbar */}
+      <header className="fixed translate-x-48 translate-y-9 z-50 w-full px-5">
+        <nav
+          aria-label="Main navigation"
+          className="mx-auto h-6 w-6 flex max-w-fit items-center rounded-full  py-3 text-gray-500 shadow-lg backdrop-blur-2xl"
+        >
+          {/* Mobile Menu Button */}
           <button
-            className="sm:hidden flex items-center focus:outline-none"
+            type="button"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             onClick={() => setIsOpen(!isOpen)}
+            className="flex items-center sm:hidden"
           >
             <svg
-              className="w-6 h-6 text-white"
+              className="h-6 w-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -32,79 +57,98 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Navigation */}
-          <ul className="hidden sm:flex items-center space-x-6 font-urbanist font-light">
-            <li>
-              <a href="#home" className="hover:text-yellow-500 transition-colors">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-yellow-500 transition-colors">
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="hover:text-yellow-500 transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                className="hover:text-yellow-500 transition-colors"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full group hover:bg-white transition-colors">
+          <ul className="hidden items-center space-x-6 font-urbanist font-light sm:flex">
+            {links.map((link) => (
+              <li key={link.label}>
                 <a
-                  href="#contact"
-                  className="font-bold animate-pulse group-hover:text-cyan-500"
+                  href={link.href}
+                  className="transition-colors hover:text-gray-500"
                 >
-                  Connect
-                </a>
-                <BsFillTelephoneFill className="w-4 h-4 text-gray-400 scale-x-[-1] group-hover:text-cyan-400" />
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <ul className="absolute top-full mt-3 left-1/2 -translate-x-1/2 w-56 rounded-2xl bg-gray-950/95 backdrop-blur-md shadow-xl text-white p-4 space-y-3 sm:hidden">
-            {["home", "about", "services", "portfolio"].map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link}`}
-                  className="block capitalize hover:text-yellow-500 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link === "portfolio"
-                    ? "Projects"
-                    : link.charAt(0).toUpperCase() + link.slice(1)}
+                  {link.label}
                 </a>
               </li>
             ))}
 
             <li>
-              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-yellow-500 group hover:bg-white transition-colors">
-                <a
-                  href="#contact"
-                  className="font-bold text-white group-hover:text-yellow-500"
-                  onClick={() => setIsOpen(false)}
-                >
+              <a
+                href="#contact"
+                className="group inline-flex items-center gap-2 rounded-full px-3 py-2 transition-colors hover:bg-white"
+              >
+                <span className="font-bold group-hover:text-cyan-500">
                   Connect
-                </a>
-                <BsFillTelephoneFill className="w-4 h-4 text-gray-700 scale-x-[-1] group-hover:text-yellow-500" />
-              </div>
+                </span>
+
+                <BsFillTelephoneFill
+                  aria-hidden="true"
+                  className="h-4 w-4 scale-x-[-1] text-gray-400 group-hover:text-cyan-500"
+                />
+              </a>
             </li>
           </ul>
-        )}
-      </div>
-    </nav>
+        </nav>
+      </header>
+
+      {/* Full Screen Mobile Menu */}
+      {isOpen && (
+        <div
+          id="mobile-menu"
+          className="fixed inset-0 z-[100] flex flex-col bg-gray-950/95 backdrop-blur-xl sm:hidden"
+        >
+          {/* Close Button */}
+          <div className="flex justify-end px-8 pt-8">
+            <button
+              type="button"
+              aria-label="Close navigation menu"
+              onClick={() => setIsOpen(false)}
+              className="text-stone-500 hover:text-gray-500"
+            >
+              <svg
+                className="h-9 w-9"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Navigation Links */}
+          <ul className="flex flex-1 flex-col items-center justify-center gap-6 font-urbanist text-4xl font-extrabold text-stone-500">
+            {links.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="transition duration-300"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+
+            <li className="mt-6">
+              <a
+                href="#contact"
+                onClick={() => setIsOpen(false)}
+                className="group inline-flex items-center gap-3 rounded-full border border-gray-500 px-8 py-3 text-lg font-semibold text-gray-500 transition-all duration-300 hover:bg-gray-500 hover:text-white hover:border-stone-300/95"
+              >
+                <span>Connect</span>
+
+                <BsFillTelephoneFill
+                  aria-hidden="true"
+                  className="scale-x-[-1]"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </>
   );
 }

@@ -1,16 +1,147 @@
+import {
+  FaReact,
+  FaNodeJs,
+  SiExpress,
+  SiPostgresql,
+  TbBrandTypescript, TbBrandJavascript,
+  RiTailwindCssFill,
+} from "../config/icons";
+
+const skills = [
+  { name: "React", icon: FaReact },
+  { name: "TypeScript", icon: TbBrandTypescript },
+  { name: "JavaScript", icon: TbBrandJavascript },
+  { name: "Tailwind", icon: RiTailwindCssFill },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "Express.js", icon: SiExpress },
+  { name: "PostgreSQL", icon: SiPostgresql }
+];
+
 export default function About() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold mb-4">About Me</h1>
-      <p className="text-lg mb-4">
-        I am a passionate web developer with experience in building modern and responsive web applications. I enjoy creating user-friendly interfaces and writing clean, efficient code.
-      </p>
-      <p className="text-lg mb-4">
-      My skills include JavaScript, React, Node.js, and various other web technologies. I am always eager to learn new things and take on challenging projects.
-      </p>
-      <p className="text-lg">
-        In my free time, I enjoy exploring new technologies, contributing to open-source projects, and improving my skills through continuous learning.
-      </p>
-    </div>
+    <section
+      id="about"
+      className="relative overflow-hidden bg-stone-950 py-24 lg:py-32"
+    >
+      {/* Background Glow */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-20 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[120px]" />
+        <div className="absolute bottom-0 right-10 h-56 w-56 rounded-full bg-violet-500/10 blur-[120px]" />
+      </div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid gap-20 lg:grid-cols-2 lg:items-center">
+          {/* Left Side */}
+          <div>
+            <p className="mb-8 inline-flex items-center gap-2 rounded-full rounded-br-md border border-white/10 bg-white/5 px-5 py-2 text-sm font-semibold text-stone-200 shadow-lg shadow-gray-700/55 backdrop-blur-xl">
+              Hi, I am
+            </p>
+
+            <h1 className="font-TiltNeon text-5xl font-semibold leading-tight text-stone-100 lg:text-7xl">
+              Joshua <span>Elusoji</span>
+            </h1>
+
+            <h2 className="text-md font-medium text-stone-400 lg:text-2xl">
+              Front-End Web Developer
+            </h2>
+
+            <p className="mt-8 max-w-xl text-sm leading-6 text-stone-300">
+              I build premium websites and web applications that combine
+              elegant design with exceptional performance. My focus is creating
+              responsive, SEO-optimized, and accessible digital experiences
+              using modern technologies such as React, TypeScript, JavaScript,
+              Tailwind CSS, Node.js, Express.js, and PostgreSQL.
+            </p>
+
+            <p className="mt-6 max-w-xl text-lg leading-9 text-stone-300">
+              Every project is crafted with scalability, clean architecture,
+              and user experience in mind. I enjoy transforming complex ideas
+              into intuitive interfaces that feel fast, polished, and
+              effortless to use.
+            </p>
+
+            {/* Skills */}
+            <div className="mt-10 flex flex-wrap gap-3">
+              {skills.map(({ name, icon: Icon }) => (
+                <span
+                  key={name}
+                  className="inline-flex items-center gap-2 rounded-full rounded-br-md border border-white/10 bg-white/5 px-4 py-2 text-sm text-stone-300 backdrop-blur-md transition-all duration-300 hover:border-gray-400/40 hover:bg-gray-400/10 hover:text-white"
+                >
+                  <Icon className="text-lg" />
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Side */}
+          <div className="relative">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-lg font-semibold text-white">
+                    Crafting Experiences
+                  </h3>
+                  <p className="mt-3 leading-8 text-stone-400">
+                    Beautiful interfaces are only the beginning. I build
+                    websites that load quickly, rank well in search engines,
+                    and deliver a seamless experience across every device.
+                  </p>
+                </div>
+
+                <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+                <div>
+                  <h3 className="text-lg font-semibold text-white">
+                    My Approach
+                  </h3>
+                  <p className="mt-3 leading-8 text-stone-400">
+                    Every line of code is written with maintainability,
+                    performance, accessibility, and scalability in mind. Clean
+                    structure today means easier growth tomorrow.
+                  </p>
+                </div>
+
+                <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+                <div className="grid grid-cols-2 gap-6 pt-2">
+                  <div>
+                    <h4 className="text-4xl font-bold text-white">30+</h4>
+                    <p className="mt-2 text-sm uppercase tracking-wider text-stone-400">
+                      Projects Built
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-white">100%</h4>
+                    <p className="mt-2 text-sm uppercase tracking-wider text-stone-400">
+                      Responsive
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-white">SEO</h4>
+                    <p className="mt-2 text-sm uppercase tracking-wider text-stone-400">
+                      Optimized
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-4xl font-bold text-white">Fast</h4>
+                    <p className="mt-2 text-sm uppercase tracking-wider text-stone-400">
+                      Performance
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Decorative Accent */}
+            <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-3xl border border-cyan-400/20 bg-stone-500 backdrop-blur-xl" />
+            <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full border border-violet-400/20 bg-gray-950/65 backdrop-blur-xl" />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
