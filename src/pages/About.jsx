@@ -8,13 +8,13 @@ import {
 } from "../config/icons";
 
 const skills = [
-  { name: "React", icon: FaReact },
-  { name: "TypeScript", icon: TbBrandTypescript },
-  { name: "JavaScript", icon: TbBrandJavascript },
-  { name: "Tailwind", icon: RiTailwindCssFill },
-  { name: "Node.js", icon: FaNodeJs },
-  { name: "Express.js", icon: SiExpress },
-  { name: "PostgreSQL", icon: SiPostgresql }
+  { name: "React", icon: FaReact, color: "text-pink-400" },
+  { name: "TypeScript", icon: TbBrandTypescript, color: "text-blue-400" },
+  { name: "JavaScript", icon: TbBrandJavascript, color: "text-yellow-400" },
+  { name: "Tailwind", icon: RiTailwindCssFill, color: "text-cyan-400" },
+  { name: "Node.js", icon: FaNodeJs, color: "text-green-400" },
+  { name: "Express.js", icon: SiExpress, color: "text-gray-400" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-600" }
 ];
 
 export default function About() {
@@ -45,15 +45,14 @@ export default function About() {
               Front-End Web Developer
             </h2>
 
-            <p className="mt-8 max-w-xl text-sm leading-6 text-stone-300">
-              I build premium websites and web applications that combine
-              elegant design with exceptional performance. My focus is creating
-              responsive, SEO-optimized, and accessible digital experiences
-              using modern technologies such as React, TypeScript, JavaScript,
-              Tailwind CSS, Node.js, Express.js, and PostgreSQL.
+            <p className="mt-4 max-w-xl text-xs leading-6 text-stone-300">
+              I build premium websites and web applications where thoughtful design meets
+              high performance. Using modern technologies and best practices
+              , I create responsive, accessible, and SEO-friendly digital experiences that
+              are built to scale.
             </p>
 
-            <p className="mt-6 max-w-xl text-lg leading-9 text-stone-300">
+            <p className=" max-w-xl text-xs leading-6 text-stone-300">
               Every project is crafted with scalability, clean architecture,
               and user experience in mind. I enjoy transforming complex ideas
               into intuitive interfaces that feel fast, polished, and
@@ -61,13 +60,13 @@ export default function About() {
             </p>
 
             {/* Skills */}
-            <div className="mt-10 flex flex-wrap gap-3">
-              {skills.map(({ name, icon: Icon }) => (
+            <div className="mt-10 flex flex-wrap gap-6">
+              {skills.map(({ name, icon: Icon, color }) => (
                 <span
                   key={name}
-                  className="inline-flex items-center gap-2 rounded-full rounded-br-md border border-white/10 bg-white/5 px-4 py-2 text-sm text-stone-300 backdrop-blur-md transition-all duration-300 hover:border-gray-400/40 hover:bg-gray-400/10 hover:text-white"
+                  className={`inline-flex items-center gap-2 rounded-full rounded-br-md border border-white/10 bg-white/5 px-4 py-2 text-sm text-stone-300 hover:text-lg backdrop-blur-md transition-all duration-300 hover:border-gray-400/40 hover:bg-gray-400/10 hover:text-white`}
                 >
-                  <Icon className="text-lg" />
+                  <Icon className={`text-xs ${color}`} />
                   {name}
                 </span>
               ))}
