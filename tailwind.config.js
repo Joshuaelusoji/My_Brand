@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         clarkson: ['Clarkson', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],
-        TiltNeon: ['TiltNeon', 'sans-serif']
+        TiltNeon: ['TiltNeon', 'sans-serif'],
+        geist: ['Geist', 'sans-serif']
       },
       keyframes: {
         spinSlow: {

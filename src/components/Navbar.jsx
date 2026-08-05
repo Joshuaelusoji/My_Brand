@@ -23,10 +23,18 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <header className="fixed translate-x-48 translate-y-9 z-50 w-full px-5">
+      <header className="fixed z-50 w-full justify-items-end overflow-hidden px-5 py-2 lg:justify-items-center">
         <nav
           aria-label="Main navigation"
-          className="mx-auto h-6 w-6 flex max-w-fit items-center rounded-full  py-3 text-gray-500 shadow-lg backdrop-blur-2xl"
+          className="
+            flex h-full w-full max-w-fit items-center rounded-full
+            border border-white/10
+            bg-gray-950/40
+            text-stone-300
+            backdrop-blur-xl
+            backdrop-saturate-150
+            shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_40px_rgba(0,0,0,0.45)]
+          "
         >
           {/* Mobile Menu Button */}
           <button
@@ -35,7 +43,7 @@ export default function Navbar() {
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center sm:hidden"
+            className="flex items-center px-4 py-3 sm:hidden"
           >
             <svg
               className="h-6 w-6"
@@ -57,12 +65,11 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Navigation */}
-          <ul className="hidden items-center space-x-6 font-urbanist font-light sm:flex">
+          <ul className="hidden font-geist font-light h-full w-full items-center space-x-2 rounded-full px-3 py-2 sm:flex">
             {links.map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="transition-colors hover:text-gray-500"
+                <a href={link.href} className="rounded-full px-4 py-2 text-stone-400 transition-all duration-300
+                  hover:bg-white/10 hover:text-white"
                 >
                   {link.label}
                 </a>
@@ -70,17 +77,17 @@ export default function Navbar() {
             ))}
 
             <li>
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-2 rounded-full px-3 py-2 transition-colors hover:bg-white"
+              <a href="#contact"
+                className=" group inline-flex items-center gap-2 rounded-full px-4 py-2 transition-all duration-300
+              hover:bg-white/10"
               >
-                <span className="font-bold group-hover:text-cyan-500">
+                <span className="font-bold text-stone-300 transition-colors group-hover:text-white">
                   Connect
                 </span>
 
                 <BsFillTelephoneFill
                   aria-hidden="true"
-                  className="h-4 w-4 scale-x-[-1] text-gray-400 group-hover:text-cyan-500"
+                  className="h-4 w-4 scale-x-[-1] text-stone-400 transition-colors group-hover:text-white"
                 />
               </a>
             </li>
@@ -100,7 +107,7 @@ export default function Navbar() {
               type="button"
               aria-label="Close navigation menu"
               onClick={() => setIsOpen(false)}
-              className="text-stone-500 hover:text-gray-500"
+              className="text-stone-500 transition-colors hover:text-white"
             >
               <svg
                 className="h-9 w-9"
@@ -125,7 +132,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="transition duration-300"
+                  className="transition-colors duration-300 hover:text-white"
                 >
                   {link.label}
                 </a>
@@ -136,7 +143,25 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="group inline-flex items-center gap-3 rounded-full border border-gray-500 px-8 py-3 text-lg font-semibold text-gray-500 transition-all duration-300 hover:bg-gray-500 hover:text-white hover:border-stone-300/95"
+                className="
+                  group
+                  inline-flex
+                  items-center
+                  gap-3
+                  rounded-full
+                  border
+                  border-stone-600
+                  px-8
+                  py-3
+                  text-lg
+                  font-semibold
+                  text-stone-300
+                  transition-all
+                  duration-300
+                  hover:border-white/20
+                  hover:bg-white/10
+                  hover:text-white
+                "
               >
                 <span>Connect</span>
 
