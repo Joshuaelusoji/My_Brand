@@ -19,6 +19,14 @@
   font-style: normal;
 }
 
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 300ms ease,
+    color 300ms ease;
+}
+
 
 @tailwind base;
 @tailwind components;

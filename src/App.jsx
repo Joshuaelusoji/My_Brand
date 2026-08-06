@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+// import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      {/* <ThemeSwitcher /> */}
     </div>
   );
 }

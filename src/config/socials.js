@@ -22,13 +22,13 @@ export const socials = [
   {
     name: "Twitter",
     icon: FaXTwitter,
-    color: "text-gray-500/70",
+    color: "text-gray-500/90",
     link: "https://twitter.com/joshuaelusoji",
   },
   {
     name: "Instagram",
     icon: FaInstagram,
-    color: "text-red-500/45",
+    color: "text-red-900/90",
     link: "https://instagram.com/joshuaelusoji",
   },
   {
