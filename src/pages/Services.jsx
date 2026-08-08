@@ -2,10 +2,10 @@ import { Code, LayoutDashboard, Cpu, Sparkles } from "lucide-react";
 
 export default function Services() {
   return (
-    <section id="services" className="from-gray-900 via-black to-gray-900 text-white px-8 py-20 bg-diagonal-lines">
-      <h2 className="font-urbanist font-semibold text-4xl text-center mb-16 text-white tracking-wider">Services</h2>
+    <section id="services" className=" text-white">
+      <h2 className=" font-semibold text-xl text-white tracking-wide">Services</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="relative bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/60 shadow-[0_0_25px_rgba(255,215,0,0.15)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(255,215,0,0.3)] group overflow-hidden h-64">
+        <div className="relative">
           <h3 className="text-xl font-semibold bg-gradient-to-r from-yellow-200 to-white bg-clip-text text-transparent mb-4 flex justify-between items-center">
             Website Design & Development
             <Code className="text-orange-800 w-10 h-10 transition-transform duration-700 group-hover:rotate-[360deg]" />

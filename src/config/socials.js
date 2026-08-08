@@ -10,31 +10,31 @@ export const socials = [
   {
     name: "GitHub",
     icon: FaGithub,
-    color: "text-white/45",
+    color: "text-white/50 hover:text-white",
     link: "https://github.com/JoshElusive",
   },
   {
     name: "LinkedIn",
     icon: FaLinkedin,
-    color: "text-blue-500/45",
+    color: "text-blue-400 hover:text-blue-500",
     link: "https://linkedin.com/in/joshuaelusoji",
   },
   {
     name: "Twitter",
     icon: FaXTwitter,
-    color: "text-gray-500/90",
+    color: "text-white/50 hover:text-white",
     link: "https://twitter.com/joshuaelusoji",
   },
   {
     name: "Instagram",
     icon: FaInstagram,
-    color: "text-red-900/90",
+    color: "text-red-400 hover:text-red-500",
     link: "https://instagram.com/joshuaelusoji",
   },
   {
     name: "Email",
     icon: CiMail,
-    color: "text-green-500/45",
+    color: "text-emerald-400 hover:text-emerald-500",
     link: "mailto:joshuaelusoji7@gmail.com",
   }
 ];
