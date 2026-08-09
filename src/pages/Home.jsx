@@ -8,16 +8,13 @@ const currentStatus = Status.Freelance;
 
 export default function Home() {
   return (
-    <section
-      id="about"
-      className="relative overflow-hidden md:pt-28  md:pb-8 pb-12"
-    >
+    <section id="about" className="relative overflow-hidden md:pt-28 md:pb-8 pb-12">
       <div className="md:mt-10 mx-auto max-w-7xl md:max-w-6xl px-6 md:px-12">
         <div className="grid grid-cols-2 items-center gap-10 lg:items-center">
           {/* Left Side */}
           <div className="">
             <h1 className="font-geist font-Extrabold text-3xl w-max leading-tight text-white lg:text-7xl">
-              Joshua Elusoji
+              Joshuaa Elusoji
             </h1>
 
             <div className="flex flex-col ">

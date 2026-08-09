@@ -3,8 +3,8 @@ import { projects } from "../config/projects";
 export default function Project() {
   return (
     <section className="mx-auto max-w-7xl text-white md:max-w-6xl">
-      <h3 className="font-geist font-semibold uppercase mb-4">Projects</h3>
-      <div className="flex flex-col">
+      <h3 className="font-geist font-semibold uppercase">Projects</h3>
+      <div className="flex">
         {projects.map(({ name, description }) => (
           <a
             key={name}
