@@ -1,6 +1,22 @@
 export const experiences = [
-  {
+    {
     id: 1,
+    role: "Front-End Developer Intern",
+    company: "Truemind Innovations Ltd",
+    period: "February 2026 — April 2026",
+    type: "Internship",
+    description:
+      "Worked as part of the front-end development team, contributing to the development of a web project and taking responsibility for one of its pages. Focused on building responsive interfaces, implementing designs, and maintaining consistency with the project's overall user experience.",
+    highlights: [
+      "Developed and maintained a dedicated page within the project.",
+      "Collaborated with other members of the front-end development team.",
+      "Built responsive and reusable UI components.",
+      "Implemented designs with attention to usability and visual consistency.",
+    ],
+  },
+
+  {
+    id: 2,
     role: "Front-End Web Developer",
     company: "Freelance",
     period: "2024 — Present",
@@ -16,7 +32,7 @@ export const experiences = [
   },
 
   {
-    id: 2,
+    id: 3,
     role: "Full-Stack Development Projects",
     company: "Personal Projects",
     period: "2023 — Present",

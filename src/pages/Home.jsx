@@ -14,7 +14,7 @@ export default function Home() {
           {/* Left Side */}
           <div className="">
             <h1 className="font-geist font-Extrabold text-3xl w-max leading-tight text-white lg:text-7xl">
-              Joshuaa Elusoji
+              Joshua Elusoji
             </h1>
 
             <div className="flex flex-col ">
