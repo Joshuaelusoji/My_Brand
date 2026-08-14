@@ -8,27 +8,28 @@ export const skills = [
       {
         name: "React",
         icon: FaReact,
-        color: "text-pink-500/70 hover:text-pink-500",
+        color: "text-stone-500 hover:text-pink-500",
+        animation: "/video/react-animation.mp4",
       },
       {
         name: "Next.js",
         icon: TbBrandNextjs,
-        color: "text-white/90 hover:text-white",
+        color: "text-stone-500 hover:text-white",
       },
       {
         name: "JavaScript",
         icon: TbBrandJavascript,
-        color: "text-yellow-400/80 hover:text-yellow-500",
+        color: "text-stone-500 hover:text-yellow-500",
       },
       {
         name: "TypeScript",
         icon: TbBrandTypescript,
-        color: "text-blue-400/90 hover:text-blue-500",
+        color: "text-stone-500 hover:text-blue-500",
       },
       {
         name: "Tailwind",
         icon: RiTailwindCssFill,
-        color: "text-cyan-400/80 hover:text-cyan-500",
+        color: "text-stone-500 hover:text-cyan-500",
       },
     ],
   },
@@ -39,12 +40,12 @@ export const skills = [
       {
         name: "Node.js",
         icon: FaNodeJs,
-        color: "text-green-400/80 hover:text-green-400",
+        color: "text-stone-500 hover:text-green-400",
       },
       {
         name: "Express.js",
         icon: SiExpress,
-        color: "text-gray-400/50 hover:text-white",
+        color: "text-stone-500 hover:text-white",
       },
     ],
   },
@@ -55,12 +56,12 @@ export const skills = [
       {
         name: "PostgreSQL",
         icon: SiPostgresql,
-        color: "text-blue-500/50 hover:text-blue-400",
+        color: "text-stone-500 hover:text-blue-400",
       },
       {
         name: "MySQL",
         icon: SiMysql,
-        color: "text-blue-500/50 hover:text-blue-400",
+        color: "text-stone-500 hover:text-cyan-400",
       }
     ],
   },
@@ -71,12 +72,12 @@ export const skills = [
       {
         name: "Git",
         icon: FaGitAlt,
-        color: "text-orange-500/50 hover:text-orange-400",
+        color: "text-stone-500 hover:text-orange-400",
       },
       {
         name: "GitHub",
         icon: FaGithub,
-        color: "text-white/90 hover:text-white",
+        color: "text-stone-500 hover:text-white",
       }
     ],
   },

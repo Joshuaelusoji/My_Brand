@@ -10,7 +10,11 @@ export default {
         clarkson: ['Clarkson', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],
         TiltNeon: ['TiltNeon', 'sans-serif'],
-        geist: ['Geist', 'sans-serif']
+        geist: ['Geist', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        ShareTechMono: ['Share Tech Mono', 'monospace'],
+
       },
       keyframes: {
         spinSlow: {

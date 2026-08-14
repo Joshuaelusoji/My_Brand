@@ -10,7 +10,7 @@ export const experiences = [
     highlights: [
       "Developed and maintained a dedicated page within the project.",
       "Collaborated with other members of the front-end development team.",
-      "Built responsive and reusable UI components.",
+      "Built responsive reusable UI components.",
       "Implemented designs with attention to usability and visual consistency.",
     ],
   },

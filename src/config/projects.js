@@ -4,22 +4,22 @@ import Restaurant from "../assets/images/Restaurant.png";
 
 export const projects = [
  { 
-  name: "Luxury hotel website", 
-  description: "Sophisticated design with easy booking and a user-friendly layout.",
+  name: "Logistics", 
+  description: "Fast-Ordering Food Website",
   image: Hotel,
-  link: "https://example.com/hotel"
+  link: "https://flashio-frontend.onrender.com/"
  },
 
  { 
-  name: "Music Landing Page",
-  description: "A clean, professional template showcasing design and Web-development skills.",
+  name: "Hotel Website",
+  description: "A mini Luxury hotel with premium customer services",
   image: Music,
   link: "https://example.com/music"
  },
 
  { 
-  name: "Restaurants Web App",
-  description: "Hello",
+  name: "Portfolio",
+  description: "Premium Portfolio Website",
   image: Restaurant,
   link: "https://example.com/restaurant"
  }
