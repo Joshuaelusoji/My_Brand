@@ -8,19 +8,15 @@ import Experience from "../components/Experience";
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden mx-auto w-[clamp(20rem,90vw,72rem)]">
+    <section id="about" className="relative overflow-hidden">
       <HeroText />
       <Socials />
       <GradientDivider />
-      <div className="grid lg:grid-cols-3 lg:items-start w-full">
+      <div className="grid lg:grid-cols-2 lg:items-start w-full">
         {/* Left Side */}
         <Skills />
-        <GradientDivider className="lg:hidden" />
-        {/* Right Side */}
-        <Projects />
-        <GradientDivider className="lg:col-span-3" />
-        <Experience />
       </div>
+
     </section>
   );
 }

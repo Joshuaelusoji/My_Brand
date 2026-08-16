@@ -1,4 +1,8 @@
-import { FaReact, FaNodeJs, FaGitAlt, FaGithub, TbBrandTypescript, TbBrandJavascript, TbBrandNextjs, RiTailwindCssFill, SiExpress, SiPostgresql, SiMysql
+import { FaReact, FaNodeJs, FaGitAlt, FaGithub,
+  FaHtml5, TbBrandTypescript, TbBrandJavascript,
+  TbBrandNextjs, RiTailwindCssFill, SiExpress, 
+  SiPostgresql, SiMysql, FaChrome, SiPostman,
+  IoTerminal, SiSocketdotio
 } from "./icons";
 
 export const skills = [
@@ -8,28 +12,33 @@ export const skills = [
       {
         name: "React",
         icon: FaReact,
-        color: "text-stone-500 hover:text-pink-500",
+        color: "text-[#61DAFB]",
         animation: "/video/react-animation.mp4",
       },
       {
         name: "Next.js",
         icon: TbBrandNextjs,
-        color: "text-stone-500 hover:text-white",
+        color: "text-[#FFFF]/80",
       },
       {
         name: "JavaScript",
         icon: TbBrandJavascript,
-        color: "text-stone-500 hover:text-yellow-500",
+        color: "text-[#F7DF1E]",
+      },
+      {
+        name: "HTML5",
+        icon: FaHtml5,
+        color: "text-[#FFFF]/80"
       },
       {
         name: "TypeScript",
         icon: TbBrandTypescript,
-        color: "text-stone-500 hover:text-blue-500",
+        color: "text-[#3178C6]",
       },
       {
         name: "Tailwind",
         icon: RiTailwindCssFill,
-        color: "text-stone-500 hover:text-cyan-500",
+        color: "text-[#06B6D4]",
       },
     ],
   },
@@ -40,13 +49,18 @@ export const skills = [
       {
         name: "Node.js",
         icon: FaNodeJs,
-        color: "text-stone-500 hover:text-green-400",
+        color: "text-[#339933]",
       },
       {
         name: "Express.js",
         icon: SiExpress,
-        color: "text-stone-500 hover:text-white",
+        color: "text-white/80",
       },
+      {
+        name: "Socket.io",
+        icon: SiSocketdotio,
+        color: "text-white/80",
+      }
     ],
   },
 
@@ -56,12 +70,17 @@ export const skills = [
       {
         name: "PostgreSQL",
         icon: SiPostgresql,
-        color: "text-stone-500 hover:text-blue-400",
+        color: "text-[#4169E1]",
+      },
+      {
+        name: "PostGIS",
+        icon: SiPostgresql,
+        color: "text-[#4169E1]/70",
       },
       {
         name: "MySQL",
         icon: SiMysql,
-        color: "text-stone-500 hover:text-cyan-400",
+        color: "text-[#4479A1]",
       }
     ],
   },
@@ -72,12 +91,27 @@ export const skills = [
       {
         name: "Git",
         icon: FaGitAlt,
-        color: "text-stone-500 hover:text-orange-400",
+        color: "text-[#F05032]",
       },
       {
         name: "GitHub",
         icon: FaGithub,
-        color: "text-stone-500 hover:text-white",
+        color: "text-[#FFFF]/80",
+      },
+      {
+        name: "DevTools",
+        icon: FaChrome,
+        color: "text-[#4285F4]",
+      },
+      {
+        name: "Postman",
+        icon: SiPostman,
+        color: "text-[#FF6C37]"
+      },
+      {
+        name: "Terminal",
+        icon: IoTerminal,
+        color: "text-white/80",
       }
     ],
   },

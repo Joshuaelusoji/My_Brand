@@ -30,7 +30,7 @@ export default function Navbar() {
              text-stone-300 text-center"
         >
           {/* Desktop Navigation */}
-          <ul className="hidden items-center space-x-2 rounded-full px-3 py-2 font-geist font-light sm:flex">
+          <ul className="hidden items-center space-x-2 rounded-full px-3 py-2 font-geist font-bold sm:flex">
             {links.map((link) => (
               <li key={link.label}>
                 <a

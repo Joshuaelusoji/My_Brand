@@ -1,26 +1,26 @@
-import { skills } from "../config/skills";
+import { bio } from "../config/bio";
 import GradientDivider from "./GradientDivider";
 
-export default function Skills() {
+export default function Bio() {
   return (
-    <div className="mt-4">
+    <div className="mt-14">
       {/* Skills */}
-      <h3 className="mb-10 font-Inter font-bold md:text-lg tracking-normal text-neutral-300">
-        SKILLS
+      <h3 className="mb-6 font-Inter font-bold md:text-lg tracking-normal text-neutral-300">
+        Bio
       </h3>
 
       <div className="flex gap-6">
-        {skills.map(({ category, skills: categorySkills }) => (
+        {bio.map(({ category, bio: categoryBio }) => (
           <div key={category} className="w-full rounded-xl">
             <div className="mb-3 flex items-center gap-2">
               <h4 className="font-Inter text-sm font-medium text-gray-400">
                 {category}
               </h4>
-              <span className="h-px flex-1 bg-gradient-to-r from-gray-700/50 to-transparent" />
+              {/* <span className="h-px flex-1 bg-gradient-to-r from-gray-700/50 to-transparent" /> */}
             </div>
 
             <div className="flex max-w-fit flex-wrap gap-2 font-Inter">
-              {categorySkills.map(({ name, icon: Icon, color }) => (
+              {categoryBio.map(({ name, icon: Icon, color }) => (
                 <span
                   key={name}
                   className={`inline-flex items-center gap-2 rounded border border-transparent 
