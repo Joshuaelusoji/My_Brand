@@ -24,11 +24,11 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      {/* <GradientDivider /> */}
+      <GradientDivider />
       <Experience />
-      {/* <GradientDivider /> */}
+      <GradientDivider />
       <Projects />
-      {/* <GradientDivider /> */}
+      <GradientDivider />
       <Bio />
       <Footer />
     </div>

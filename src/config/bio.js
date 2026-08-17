@@ -8,13 +8,14 @@ export const bio = [
   {
     category: "Interests",
     bio: [
-      { name: "Programming", icon: FaCode, color: DEFAULT_COLOR },
-      { name: "Music", icon: FaMusic, color: DEFAULT_COLOR },
-      { name: "Piano", icon: RiPianoGrandLine, color: DEFAULT_COLOR},
-      { name: "Technology", icon: FaMicrochip, color: DEFAULT_COLOR },
-      { name: "Movies", icon: FaFilm, color: DEFAULT_COLOR },
-      { name: "Science Fiction", icon: FaRobot, color: DEFAULT_COLOR },
-      { name: "Adventure", icon: FaCompass, color: DEFAULT_COLOR },
+      { name: "Programming", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Music", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Piano", icon: DEFAULT_ICON, color: DEFAULT_COLOR},
+      { name: "Technology", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Movies", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Science Fiction", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Adventure", icon: DEFAULT_ICON, color: DEFAULT_COLOR },
+      { name: "Books", icon: DEFAULT_ICON, color: DEFAULT_COLOR}
     ],
   },
 

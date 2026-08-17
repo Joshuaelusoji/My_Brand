@@ -3,13 +3,13 @@ import GradientDivider from "./GradientDivider";
 
 export default function Skills() {
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-sm-4">
       {/* Skills */}
       <h3 className="mb-10 font-Inter font-bold md:text-lg tracking-normal text-neutral-300">
         SKILLS
       </h3>
 
-      <div className="flex gap-6">
+      <div className="flex ">
         {skills.map(({ category, skills: categorySkills }) => (
           <div key={category} className="w-full rounded-xl">
             <div className="mb-3 flex items-center gap-2">

@@ -2,7 +2,7 @@ import { FaReact, FaNodeJs, FaGitAlt, FaGithub,
   FaHtml5, TbBrandTypescript, TbBrandJavascript,
   TbBrandNextjs, RiTailwindCssFill, SiExpress, 
   SiPostgresql, SiMysql, FaChrome, SiPostman,
-  IoTerminal, SiSocketdotio
+  IoTerminal, SiSocketdotio, RiCss3Line
 } from "./icons";
 
 export const skills = [
@@ -40,6 +40,11 @@ export const skills = [
         icon: RiTailwindCssFill,
         color: "text-[#06B6D4]",
       },
+      {
+        name: "CSS3",
+        icon: RiCss3Line,
+        color: "text-[#FFF]/80"
+      }
     ],
   },
 

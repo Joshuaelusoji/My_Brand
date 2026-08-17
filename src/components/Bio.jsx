@@ -12,7 +12,7 @@ export default function Bio() {
       <div className="flex gap-6">
         {bio.map(({ category, bio: categoryBio }) => (
           <div key={category} className="w-full rounded-xl">
-            <div className="mb-3 flex items-center gap-2">
+            <div className="mb-3 gap-2">
               <h4 className="font-Inter text-sm font-medium text-gray-400">
                 {category}
               </h4>

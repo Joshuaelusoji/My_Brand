@@ -2,7 +2,7 @@ import { projects } from "../config/projects";
 
 export default function Project() {
   return (
-    <section id="projects" className="mt-14 max-w-7xl text-neutral-300 md:max-w-6xl">
+    <section id="projects" className=" max-w-7xl text-neutral-300 md:max-w-6xl">
       <h3 className="font-Inter font-bold md:text-lg tracking-normal uppercase mb-6">
         Projects
       </h3>

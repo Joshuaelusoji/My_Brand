@@ -12,10 +12,11 @@ export default function About() {
       <HeroText />
       <Socials />
       <GradientDivider />
-      <div className="grid lg:grid-cols-2 lg:items-start w-full">
+      <div className="lg:items-start w-full">
         {/* Left Side */}
         <Skills />
       </div>
+      
 
     </section>
   );
