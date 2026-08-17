@@ -143,7 +143,7 @@ export default function Navbar() {
               onClick={() => setIsConnectOpen(false)}
               className="mt-5 w-full italic py-2 text-sm text-zinc-500 transition-colors hover:text-white"
             >
-              Not now
+              later
             </button>
           </div>
         </div>
