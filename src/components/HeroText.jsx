@@ -1,9 +1,16 @@
+import { FaUserLarge } from "react-icons/fa6";
+
 export default function HeroText() {
   return (
     <div>
-      <h2 className="mb-2 font-Inter font-bold md:text-lg tracking-normal text-neutral-300">
-        ABOUT
-      </h2>
+      <div className="flex items-center gap-2 mb-6">
+        <FaUserLarge className="my-auto text-base text-stone-500"/>
+        <h2 className="font-Inter font-light md:text-lg tracking-normal text-neutral-300">
+          ABOUT
+        </h2>
+
+      </div>
+      
 
       <p className="w-[clamp(22rem,80vw,fullrem)] font-geist text-[clamp(0.935rem,1.2vw,1.125rem)] font-light tracking-normal leading-6 text-neutral-300/80">
         Hello there! I am Joshua, a Front-End Web Developer who enjoys

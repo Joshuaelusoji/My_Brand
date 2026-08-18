@@ -1,13 +1,17 @@
 import { bio } from "../config/bio";
 import GradientDivider from "./GradientDivider";
+import { CiUser } from  "../config/icons"
 
 export default function Bio() {
   return (
     <div className="mt-14">
       {/* Skills */}
-      <h3 className="mb-6 font-Inter font-bold md:text-lg tracking-normal text-neutral-300">
-        Bio
-      </h3>
+      <div className="flex items-center gap-2 mb-6">
+        <CiUser className="text-stone-500"/>
+        <h3 className="font-Inter font-light md:text-lg tracking-normal text-neutral-300">
+          Bio
+        </h3>
+      </div>
 
       <div className="flex gap-6">
         {bio.map(({ category, bio: categoryBio }) => (

@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'TiltNeon';
-  src: url('/fonts/TiltNeon.woff2') format('woff2');
+  font-family: "TiltNeon";
+  src: url("/fonts/TiltNeon.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Clarkson';
-  src: url('/fonts/Clarkson.woff2') format('woff2');
+  font-family: "Clarkson";
+  src: url("/fonts/Clarkson.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-Light.ttf') format('truetype');
+  font-family: "Urbanist";
+  src: url("/fonts/Urbanist-Light.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -22,12 +22,33 @@
 html {
   color-scheme: dark;
   min-height: 100%;
-  background-color: #000000; /* solid black — matches your gradient's darkest/most common tone */
+  background-color: #000000;
 }
 
-body, #root {
+body,
+#root {
   min-height: 100%;
   background: transparent;
+}
+
+/* Projects */
+.projects {
+  --project-accent: hsl(295, 36%, 46%);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }
 
 @tailwind base;

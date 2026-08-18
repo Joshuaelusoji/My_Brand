@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
 
   const phoneNumber = "+2349035680651";
-  const whatsappNumber = "2349035680651";
+  const whatsappNumber = "+2349035680651";
 
   return (
     <>

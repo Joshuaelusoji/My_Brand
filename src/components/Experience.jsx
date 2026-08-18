@@ -1,11 +1,15 @@
 import { experiences } from "../config/experiences";
+import { LuBriefcaseBusiness, SiMoleculer } from "../config/icons"
 
 export default function Experience() {
   return (
-    <div className="min-h-0 ">
-      <h3 className="mb-6 font-Inter font-semibold md:text-lg tracking-wider text-neutral-100">
-        EXPERIENCES
-      </h3>
+    <div className="">
+      <div className="flex items-center gap-2 mb-6">
+        <SiMoleculer className="text-stone-500"/>
+        <h3 className="font-Inter font-light md:text-lg tracking-wider text-neutral-300">
+          EXPERIENCES
+        </h3>
+      </div>
 
       <div className="w-full md:max-h-[500px] md:overflow-y-auto space-y-8">
         {experiences.map(
