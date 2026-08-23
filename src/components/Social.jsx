@@ -6,7 +6,7 @@ export default function Social() {
           <div className="flex space-x-4 z-20">
             {socials.map(({ name, icon: Icon, color, link, hover }) => (
               <a key={name} href={link} target="_blank" rel="noopener noreferrer"
-                 className="transition-transform hover:scale-110 w-10 px-2 mt-4"
+                 className="transition-transform hover:scale-110 w-10 pr-2 mt-4"
               >
                 <Icon className={`text-2xl ${color} `}/>
               </a>

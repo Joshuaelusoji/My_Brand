@@ -20,6 +20,7 @@ export default function Navbar() {
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
+    { label: "Bio", href: "#Bio"}
   ];
 
   const phoneNumber = "+2349035680651";

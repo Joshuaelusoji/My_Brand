@@ -39,18 +39,18 @@ export default function Project() {
           <div className="font-geist flex flex-col md:flex-row gap-6 md:gap-10">
             {/* Project image */}
             {project.image && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full md:w-1/2 order-1"
-              >
+              // <a
+              //   href={project.link}
+              //   target="_blank"
+              //   rel="noopener noreferrer"
+              //   className="w-full md:w-1/2 order-1"
+              // >
                 <img
                   src={project.image}
                   alt={`${project.name}_img`}
                   className="w-full max-w-xl aspect-video object-cover rounded-lg"
                 />
-              </a>
+              
             )}
 
             {/* Text content */}
