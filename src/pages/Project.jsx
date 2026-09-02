@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { projects } from "../config/projects";
-import { TfiSaveAlt } from "../config/icons";
+import { FaFolder } from "../config/icons";
 
 export default function Project() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,9 +26,9 @@ export default function Project() {
     >
       {/* Section heading */}
       <div className="flex items-center gap-2 mb-6">
-        <TfiSaveAlt className="text-stone-500 h-4 w-4" />
+        <FaFolder className="text-stone-500 h-4 w-4" />
 
-        <h3 className="font-Inter font-light text-neutral-300 md:text-lg tracking-normal uppercase">
+        <h3 className="font-Inter font-semibold text-neutral-300 md:text-lg tracking-normal uppercase">
           Projects
         </h3>
       </div>
@@ -48,7 +48,7 @@ export default function Project() {
                 <img
                   src={project.image}
                   alt={`${project.name}_img`}
-                  className="w-full max-w-xl aspect-video object-cover rounded-lg"
+                  className="w-full max-w-xl aspect-video object-contain rounded-lg"
                 />
               
             )}

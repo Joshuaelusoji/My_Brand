@@ -12,16 +12,16 @@ export default function Skills() {
           <GrGamepad className="text-stone-500" />
         </div>
         {/* Skills */}
-        <h3 className="font-Inter font-light tracking-normal text-neutral-300 md:text-lg">
+        <h3 className="font-Inter font-semibold tracking-normal text-neutral-300 md:text-lg">
           SKILLS
         </h3>
       </div>
       
       <div className="md:flex">
         {skills.map(({ category, skills: categorySkills }) => (
-          <div key={category} className=" w-full gap-2 rounded-xl">
+          <div key={category} className=" md:w-64 rounded-xl">
             <div className="flex items-center gap-2">
-              <h4 className="font-Inter text-sm font-medium text-gray-400">
+              <h4 className="font-Inter text-sm font-medium md:mb-3 text-gray-400">
                 {category}
               </h4>
 

@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           {/* Right Side */}
           <div className="">
-            <img className="w-[clamp(120px,25vw,320px)] h-[clamp(120px,25vw,320px)] aspect-square rounded-full object-cover ring-1 ring-white/10 mx-auto"
+            <img className="w-[clamp(120px,25vw,320px)] aspect-square rounded-full object-cover ring-1 ring-white/10 mx-auto"
             src={Joshua} alt="Joshua_img"/>        
           </div>
           

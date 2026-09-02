@@ -36,15 +36,16 @@ export const skills = [
         color: "text-[#3178C6]",
       },
       {
-        name: "Tailwind",
-        icon: RiTailwindCssFill,
-        color: "text-[#06B6D4]",
-      },
-      {
         name: "CSS3",
         icon: RiCss3Line,
         color: "text-[#FFF]/80"
+      },
+      {
+        name: "Tailwind",
+        icon: RiTailwindCssFill,
+        color: "text-[#06B6D4]",
       }
+      
     ],
   },
 
