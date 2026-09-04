@@ -14,7 +14,7 @@ export default function HeroText() {
 
       <p className="w-[clamp(22rem,80vw,full)] font-geist text-[clamp(0.935rem,1.2vw,1.125rem)] font-light tracking-normal leading-8 text-neutral-300/80">
         Hello there! I am Joshua, a Front-End Web Developer. I build websites and web applications with a strong focus on
-        <span className=" text-gray-500 font-bold"> performance, usability, accessibility, and SEO-optimization</span>. 
+        <span className=" text-lime-500 font-normal"> performance, usability, accessibility, and SEO-optimization</span>. 
         I believe good software should not only look good, but also solve real problems.
         Every interaction should feel intentional, every section should be self-explanatory, and the entire experience should feel natural from the first click to the last.
       </p>

@@ -54,13 +54,13 @@ export default function Navbar() {
                 onClick={() => setIsConnectOpen(true)}
                 className="group inline-flex items-center gap-2 rounded-full px-4 py-2 transition-all duration-300 hover:bg-white/10"
               >
-                <span className="font-bold text-stone-300 transition-colors group-hover:text-white">
+                <span className="font-bold text-lime-500 transition-colors group-hover:text-white">
                   Connect
                 </span>
 
                 <BsFillTelephoneFill
                   aria-hidden="true"
-                  className="h-4 w-4 scale-x-[-1] text-stone-300 transition-colors group-hover:text-white"
+                  className="h-4 w-4 scale-x-[-1] text-lime-500 transition-colors group-hover:text-white"
                 />
               </button>
             </li>
