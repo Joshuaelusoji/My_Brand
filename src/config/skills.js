@@ -115,7 +115,7 @@ export const skills = [
         color: "text-[#FF6C37]"
       },
       {
-        name: "Terminal",
+        name: "Shell Scripting",
         icon: IoTerminal,
         color: "text-white/80",
       }
